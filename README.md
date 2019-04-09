@@ -23,7 +23,7 @@ Unless indicated otherwise, all source code files are published under the BSD li
 
 ### Acoustic Impulse Responses (AIR)
 
-Unless indicated otherwise, acoustic impulse response (AIR) data files are distributed under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 license](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode).
+Unless indicated otherwise, acoustic impulse response (AIR) data files are distributed under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 license](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode). This dataset along with a documentation is also provided on Zenodo.
 
 ### Audio recordings
 
@@ -47,7 +47,7 @@ For the intellectual rights and the distribution policy of the audio recordings 
 
 #### Real Music Recordings with Eigenmike em32
 
-These recordings were made during the rehearsals of [Nemeth Quartet](http://www.nemethquartet.com) at the [Erimtan Museum](http://erimtanmuseum.org/) recital hall in Ankara, Turkey on March, 7. 2017 and used here to demonstrate the capabilities of HiGRID with a real recording. **The recordings are copyrighted and should not used without permission.**
+These recordings were made during the rehearsals of [Nemeth Quartet](http://www.nemethquartet.com) at the [Erimtan Museum](http://erimtanmuseum.org/) recital hall in Ankara, Turkey on March, 7. 2017 and used here to demonstrate the capabilities of HiGRID with a real recording. **The recordings are copyrighted and should not used without explicit permission.**
 
 ## Installation
 
@@ -63,12 +63,15 @@ In order to install and use the `higrid` you need Python 3.x on your system. A f
 
 Please also check the [requirements.txt](https://github.com/metu-sparg/higrid/blob/master/requirements.txt) file for the specific version requirements.
 
-### Installation from `pip3` Package
+### Installation using `pip3`
 
 Using `pip3` is the easiest way to install: `pip3 -install higrid`
 
 ### Installation from source
 
+If you want to download and use the source code from Github:
+
+`git clone --recursive https://github.com/metu-sparg/higrid.git`
 
 ## Acknowledgments
 
