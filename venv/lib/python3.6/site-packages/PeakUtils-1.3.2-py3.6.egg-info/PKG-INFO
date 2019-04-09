@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: PeakUtils
+Version: 1.3.2
+Summary: Peak detection utilities for 1D data
+Home-page: https://bitbucket.org/lucashnegri/peakutils
+Author: Lucas Hermann Negri
+Author-email: lucashnegri@gmail.com
+License: MIT
+Description: PeakUtils
+        =========
+        
+        .. image:: https://zenodo.org/badge/102883046.svg
+           :target: https://zenodo.org/badge/latestdoi/102883046
+        
+        This package provides utilities related to the detection of peaks on 1D data.
+        Includes functions to estimate baselines, finding the indexes of peaks in the data
+        and performing Gaussian fitting or centroid computation to further increase the
+        resolution of the peak detection.
+        
+        The documentation is available at http://peakutils.readthedocs.io/en/latest .
+        
+        Installation
+        ------------
+        
+        To install PeakUtils from the source package, run:
+        
+        .. code-block:: bash
+        
+            python setup.py install
+        
+        PeakUtils targets Python 2.7+ and depends on numpy, scipy, and optionally on
+        matplotlib.
+        
+        Contribute
+        ----------
+        
+        - Source Code: https://bitbucket.org/lucashnegri/peakutils
+        - Issues: https://bitbucket.org/lucashnegri/peakutils/issues
+        - Direct contact: Lucas Hermann Negri - lucashnegri <at> gmail.com
+        
+        License
+        -------
+        
+        The project is licensed under the MIT license.
+        
+Keywords: peak detection search gaussian centroid baseline maximum
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering
+Description-Content-Type: text/x-rst

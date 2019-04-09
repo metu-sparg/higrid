@@ -1,0 +1,282 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>HiGRID documentation &mdash; higrid 0.1.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="higrid" href="modules.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="#" class="icon icon-home"> higrid
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="modules.html">higrid</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">higrid</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="#">Docs</a> &raquo;</li>
+        
+      <li>HiGRID documentation</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="higrid-documentation">
+<h1>HiGRID documentation<a class="headerlink" href="#higrid-documentation" title="Permalink to this headline">¶</a></h1>
+<p><cite>higrid</cite> is a Python package that implements the hierarchical grid refinement (HiGRID) direction-of-arrival estimation algorithm for rigid spherical microphone arrays. The algorithm is based on the calculation of steered response power density (SRPD) maps, and spatial entropy-based (multiple) peak detection.</p>
+<p>The method was developed by the researchers in METU Spatial Audio Research Group <a class="reference external" href="http://www.sparglab.org">http://www.sparglab.org</a>. The technical details are available in the following papers. Please cite our papers if you want to use the code and/or the data provided in this package in your research.</p>
+<p><em>Coteli, M. B., Olgun, O., and Hacihabiboglu, H. (2018). Multiple Sound Source Localization With Steered Response Power Density and Hierarchical Grid Refinement. IEEE/ACM Trans. Audio, Speech and Language Process., 26(11), 2215-2229.</em> <a class="reference external" href="https://ieeexplore.ieee.org/document/8418732">https://ieeexplore.ieee.org/document/8418732</a></p>
+<p><em>Olgun, O. and Hacihabiboglu, H., (2018) “Localization of Multiple Sources in the Spherical Harmonic Domain with Hierarchical Grid Refinement and EB-MUSIC”. In 2018 16th Int. Workshop on Acoust. Signal Enhancement (IWAENC-18) (pp. 101-105), Tokyo, Japan.</em> <a class="reference external" href="https://ieeexplore.ieee.org/abstract/document/8521365">https://ieeexplore.ieee.org/abstract/document/8521365</a> ; also available at <a class="reference external" href="https://bit.ly/2I81eru">https://bit.ly/2I81eru</a></p>
+<div class="section" id="installation">
+<h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
+<p>Due to one of the key external packages (i.e. healpy) working on Linux and MacOS only (and not Windows), higrid will also only work on Linuz and MacOS, only. The current version was tested on MacOS 10.14.1 with Python 3.6.1.</p>
+<div class="section" id="prerequisites">
+<h3>Prerequisites<a class="headerlink" href="#prerequisites" title="Permalink to this headline">¶</a></h3>
+<p>In order to install and use the <cite>higrid</cite> you need Python 3.x on your system. A few tweaks would be necessary to make it work with Python 2.7 (incompatibilities are due to scipy version, as well as default parameters for pickle implementation in 2.7 and defaultdict member functions in 2.7). The following packages are also needed:</p>
+<ul class="simple">
+<li><p>numpy <a class="reference external" href="http://www.numpy.org">http://www.numpy.org</a></p></li>
+<li><p>scipy <a class="reference external" href="https://www.scipy.org">https://www.scipy.org</a></p></li>
+<li><p>healpy <a class="reference external" href="https://github.com/healpy/healpy">https://github.com/healpy/healpy</a></p></li>
+<li><p>PeakUtils <a class="reference external" href="https://bitbucket.org/lucashnegri/peakutils">https://bitbucket.org/lucashnegri/peakutils</a></p></li>
+<li><p>tqdm <a class="reference external" href="https://www.github.com/tqdm/tqdm">https://www.github.com/tqdm/tqdm</a></p></li>
+<li><p>madmom <a class="reference external" href="https://github.com/CPJKU/madmom">https://github.com/CPJKU/madmom</a></p></li>
+</ul>
+<p>Please also check the requirements.txt file at <a class="reference external" href="https://github.com/metu-sparg/higrid/blob/master/requirements.txt">https://github.com/metu-sparg/higrid/blob/master/requirements.txt</a> for the specific version requirements.</p>
+</div>
+<div class="section" id="installation-from-pip3-package">
+<h3>Installation from <cite>pip3</cite> Package<a class="headerlink" href="#installation-from-pip3-package" title="Permalink to this headline">¶</a></h3>
+<p>Using <cite>pip3</cite> is the easiest way to install <cite>higrid</cite> :</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pip3</span> <span class="o">-</span><span class="n">install</span> <span class="n">higrid</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="example-usage">
+<h2>Example usage<a class="headerlink" href="#example-usage" title="Permalink to this headline">¶</a></h2>
+<p><strong>Please see the file `higrid_example.py` for a more complete example.</strong></p>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">higrid</span> <span class="kn">as</span> <span class="nn">hg</span>
+
+<span class="n">testinstance</span> <span class="o">=</span> <span class="nb">set</span><span class="p">([(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">2</span><span class="p">)])</span>
+<span class="n">sg</span> <span class="o">=</span> <span class="n">hg</span><span class="o">.</span><span class="n">composescene</span><span class="p">(</span>
+     <span class="p">[</span><span class="s1">&#39;music/mahler_vl1a_6.wav&#39;</span><span class="p">,</span> <span class="s1">&#39;music/mahler_vl1b_6.wav&#39;</span><span class="p">,</span> <span class="s1">&#39;music/mahler_vl2a_6.wav&#39;</span><span class="p">,</span> <span class="s1">&#39;music/mahler_vl2b_6.wav&#39;</span><span class="p">],</span>
+     <span class="n">testinstance</span><span class="p">,</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">192000</span><span class="p">))</span>
+<span class="n">pd</span> <span class="o">=</span> <span class="n">hg</span><span class="o">.</span><span class="n">loadpixbasis</span><span class="p">()</span>
+<span class="n">th</span><span class="p">,</span> <span class="n">ph</span> <span class="o">=</span> <span class="n">hg</span><span class="o">.</span><span class="n">higridestimate</span><span class="p">(</span><span class="n">sg</span><span class="p">,</span> <span class="n">pd</span><span class="p">,</span> <span class="n">maxnum</span><span class="o">=</span><span class="mi">1000</span><span class="p">,</span> <span class="n">Fs</span><span class="o">=</span><span class="mi">48000</span><span class="p">,</span> <span class="n">Ndec</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">NFFT</span><span class="o">=</span><span class="mi">1024</span><span class="p">,</span> <span class="n">olap</span><span class="o">=</span><span class="mi">16</span><span class="p">,</span> <span class="n">tLevel</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">dpdflag</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span>
+                            <span class="n">fL</span><span class="o">=</span><span class="mf">2608.</span><span class="p">,</span> <span class="n">fH</span><span class="o">=</span><span class="mf">5216.</span><span class="p">,</span> <span class="n">thr</span><span class="o">=</span><span class="mi">6</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+<div class="toctree-wrapper compound">
+<p class="caption"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="modules.html">higrid</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="higrid.html">higrid package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="higrid.html#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="higrid.html#higrid-microphone-module">higrid.Microphone module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="higrid.html#higrid-treeclusteri-module">higrid.TreeClusteri module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="higrid.html#higrid-treei-module">higrid.Treei module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="higrid.html#higrid-dpd-module">higrid.dpd module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="higrid.html#higrid-emulate-module">higrid.emulate module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="higrid.html#higrid-higridestimate-module">higrid.higridestimate module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="higrid.html#higrid-shd-module">higrid.shd module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="higrid.html#higrid-testpos3d-module">higrid.testpos3d module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="higrid.html#higrid-treeutils-module">higrid.treeutils module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="higrid.html#higrid-utils-module">higrid.utils module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="higrid.html#module-higrid">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="section" id="indices-and-tables">
+<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
+<li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
+<li><p><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></p></li>
+</ul>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="modules.html" class="btn btn-neutral float-right" title="higrid" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Huseyin Hacihabiboglu
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

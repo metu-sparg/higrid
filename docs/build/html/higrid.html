@@ -1,0 +1,1247 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>higrid package &mdash; higrid 0.1.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="higrid" href="modules.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> higrid
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">higrid</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">higrid package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#higrid-microphone-module">higrid.Microphone module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#higrid-treeclusteri-module">higrid.TreeClusteri module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#higrid-treei-module">higrid.Treei module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#higrid-dpd-module">higrid.dpd module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#higrid-emulate-module">higrid.emulate module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#higrid-higridestimate-module">higrid.higridestimate module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#higrid-shd-module">higrid.shd module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#higrid-testpos3d-module">higrid.testpos3d module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#higrid-treeutils-module">higrid.treeutils module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#higrid-utils-module">higrid.utils module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-higrid">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">higrid</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="modules.html">higrid</a> &raquo;</li>
+        
+      <li>higrid package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/higrid.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="higrid-package">
+<h1>higrid package<a class="headerlink" href="#higrid-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+<p><cite>higrid</cite> consists of the following submodules:</p>
+</div>
+<div class="section" id="higrid-microphone-module">
+<h2>higrid.Microphone module<a class="headerlink" href="#higrid-microphone-module" title="Permalink to this headline">¶</a></h2>
+<p>Microphone class that is to be expanded in the future versions of the package.</p>
+<span class="target" id="module-higrid.Microphone"></span><dl class="class">
+<dt id="higrid.Microphone.EigenmikeEM32">
+<em class="property">class </em><code class="descclassname">higrid.Microphone.</code><code class="descname">EigenmikeEM32</code><a class="headerlink" href="#higrid.Microphone.EigenmikeEM32" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#higrid.Microphone.MicrophoneArray" title="higrid.Microphone.MicrophoneArray"><code class="xref py py-class docutils literal notranslate"><span class="pre">higrid.Microphone.MicrophoneArray</span></code></a></p>
+<p>Eigenmike em32 class that inherits from the MicrophoneArray class.</p>
+<dl class="method">
+<dt id="higrid.Microphone.EigenmikeEM32.returnAsStruct">
+<code class="descname">returnAsStruct</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#higrid.Microphone.EigenmikeEM32.returnAsStruct" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the attributes of the Eigenmike em32 as a struct</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>dict object with the name, type, thetas, phis, radius, weights, version, numelements, directivity, info fields</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="higrid.Microphone.Microphone">
+<em class="property">class </em><code class="descclassname">higrid.Microphone.</code><code class="descname">Microphone</code><span class="sig-paren">(</span><em>name='Generic'</em>, <em>version='1.0'</em>, <em>direct='Omnidirectional'</em><span class="sig-paren">)</span><a class="headerlink" href="#higrid.Microphone.Microphone" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Microphone class</p>
+<dl class="method">
+<dt id="higrid.Microphone.Microphone.getname">
+<code class="descname">getname</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#higrid.Microphone.Microphone.getname" title="Permalink to this definition">¶</a></dt>
+<dd><p>Getter for the name</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Name (str) of the microphone object</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="higrid.Microphone.Microphone.getversion">
+<code class="descname">getversion</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#higrid.Microphone.Microphone.getversion" title="Permalink to this definition">¶</a></dt>
+<dd><p>Getter for the version</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Version (str) of the microphone object</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="higrid.Microphone.Microphone.setname">
+<code class="descname">setname</code><span class="sig-paren">(</span><em>name</em><span class="sig-paren">)</span><a class="headerlink" href="#higrid.Microphone.Microphone.setname" title="Permalink to this definition">¶</a></dt>
+<dd><p>Setter for the name attribute</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>name</strong> – Name of the microphone (str)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="higrid.Microphone.Microphone.setversion">
+<code class="descname">setversion</code><span class="sig-paren">(</span><em>version</em><span class="sig-paren">)</span><a class="headerlink" href="#higrid.Microphone.Microphone.setversion" title="Permalink to this definition">¶</a></dt>
+<dd><p>Setter for the version attribute</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>name</strong> – Version of the microphone (str)</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="higrid.Microphone.MicrophoneArray">
+<em class="property">class </em><code class="descclassname">higrid.Microphone.</code><code class="descname">MicrophoneArray</code><span class="sig-paren">(</span><em>name</em>, <em>typ</em>, <em>version</em>, <em>direct</em><span class="sig-paren">)</span><a class="headerlink" href="#higrid.Microphone.MicrophoneArray" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#higrid.Microphone.Microphone" title="higrid.Microphone.Microphone"><code class="xref py py-class docutils literal notranslate"><span class="pre">higrid.Microphone.Microphone</span></code></a></p>
+<p>MicrophoneArray Class that inherits from the Microphone class</p>
+<dl class="method">
+<dt id="higrid.Microphone.MicrophoneArray.gettype">
+<code class="descname">gettype</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#higrid.Microphone.MicrophoneArray.gettype" title="Permalink to this definition">¶</a></dt>
+<dd><p>Getter for array type</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Type of the array (str)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="higrid.Microphone.MicrophoneArray.settype">
+<code class="descname">settype</code><span class="sig-paren">(</span><em>typ</em><span class="sig-paren">)</span><a class="headerlink" href="#higrid.Microphone.MicrophoneArray.settype" title="Permalink to this definition">¶</a></dt>
+<dd><p>Setter for array type</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>typ</strong> – Type of the array (str)</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="higrid-treeclusteri-module">
+<h2>higrid.TreeClusteri module<a class="headerlink" href="#higrid-treeclusteri-module" title="Permalink to this headline">¶</a></h2>
+<p>Submodule containing functions used in clustering multiresolution SRPD maps</p>
+<span class="target" id="module-higrid.TreeClusteri"></span><dl class="function">
+<dt id="higrid.TreeClusteri.hpneighbouridx">
+<code class="descclassname">higrid.TreeClusteri.</code><code class="descname">hpneighbouridx</code><span class="sig-paren">(</span><em>level</em>, <em>idx</em><span class="sig-paren">)</span><a class="headerlink" href="#higrid.TreeClusteri.hpneighbouridx" title="Permalink to this definition">¶</a></dt>
+<dd><p>Neighbours of a Healpix pixel (in nested format)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>level</strong> – Resolution level</p></li>
+<li><p><strong>idx</strong> – Index of the Healpix pixel</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Neighbouring nodes of the pixel</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="higrid.TreeClusteri.neighboursofset">
+<code class="descclassname">higrid.TreeClusteri.</code><code class="descname">neighboursofset</code><span class="sig-paren">(</span><em>cset</em><span class="sig-paren">)</span><a class="headerlink" href="#higrid.TreeClusteri.neighboursofset" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return all the neighbours of a set of Healpix pixels (in nested format)
+:param cset:
+:return:</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="higrid.TreeClusteri.preprocess">
+<code class="descclassname">higrid.TreeClusteri.</code><code class="descname">preprocess</code><span class="sig-paren">(</span><em>trr</em>, <em>tLevel</em><span class="sig-paren">)</span><a class="headerlink" href="#higrid.TreeClusteri.preprocess" title="Permalink to this definition">¶</a></dt>
+<dd><p>Eliminate leaf nodes that are below the mean</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>trr</strong> – Healpix tree (as a defaultdict)</p></li>
+<li><p><strong>tLevel</strong> – Level at which the leaf nodes are</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Tree as a defaultdict after mean thresholding</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="higrid.TreeClusteri.treeCluster">
+<code class="descclassname">higrid.TreeClusteri.</code><code class="descname">treeCluster</code><span class="sig-paren">(</span><em>trr</em>, <em>tLevel</em><span class="sig-paren">)</span><a class="headerlink" href="#higrid.TreeClusteri.treeCluster" title="Permalink to this definition">¶</a></dt>
+<dd><p>Neighbouring Nodes Labelling (NNL) for clustering pixels</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>trr</strong> – Healpix tree (as a defaultdict)</p></li>
+<li><p><strong>tLevel</strong> – Level at which the leaf nodes are</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Healpix pixel clusters that belong to a single source</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="higrid-treei-module">
+<h2>higrid.Treei module<a class="headerlink" href="#higrid-treei-module" title="Permalink to this headline">¶</a></h2>
+<p>Tree selection based on spatial entropy</p>
+</div>
+<div class="section" id="higrid-dpd-module">
+<h2>higrid.dpd module<a class="headerlink" href="#higrid-dpd-module" title="Permalink to this headline">¶</a></h2>
+<p>Submodule including functions used for the direct path dominance (DPD) test</p>
+<span class="target" id="module-higrid.dpd"></span><dl class="function">
+<dt id="higrid.dpd.dpd">
+<code class="descclassname">higrid.dpd.</code><code class="descname">dpd</code><span class="sig-paren">(</span><em>Anm</em>, <em>Ndec</em>, <em>find</em>, <em>tind</em>, <em>Jtau</em>, <em>Jnu</em>, <em>thr</em><span class="sig-paren">)</span><a class="headerlink" href="#higrid.dpd.dpd" title="Permalink to this definition">¶</a></dt>
+<dd><p>Direct Path Dominance (DPD) test</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>Anm</strong> – (N+1)^2-element list containing SHDs of STFTs</p></li>
+<li><p><strong>Ndec</strong> – SHD order</p></li>
+<li><p><strong>find</strong> – Frequency index</p></li>
+<li><p><strong>tind</strong> – Time index</p></li>
+<li><p><strong>Jtau</strong> – Time averaging window size</p></li>
+<li><p><strong>Jnu</strong> – Frequency averaging window size</p></li>
+<li><p><strong>thr</strong> – DPD threshold</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>flag (1 if erank=1, 0 otherwise)</p>
+</dd>
+</dl>
+<p>Note:
+See the following paper for details of DPD
+Nadiri, O., and Rafaely, B. (2014). Localization of multiple speakers under high reverberation using a spherical
+microphone array and the direct-path dominance test. IEEE/ACM Trans. on Audio, Speech, and Lang. Process., 22(10),
+1494-1505.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="higrid.dpd.getAnm">
+<code class="descclassname">higrid.dpd.</code><code class="descname">getAnm</code><span class="sig-paren">(</span><em>P</em>, <em>mstr</em>, <em>Bmat</em>, <em>findmin</em>, <em>findmax</em>, <em>Ndec</em><span class="sig-paren">)</span><a class="headerlink" href="#higrid.dpd.getAnm" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the (N+1)^2-element list containing SHDs of STFTs</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>P</strong> – STFTs of the M channels of recordings</p></li>
+<li><p><strong>mstr</strong> – Dict containing the microphone array properties</p></li>
+<li><p><strong>Bmat</strong> – List of response equalisation matrices</p></li>
+<li><p><strong>findmin</strong> – Index of minimum frequency (int)</p></li>
+<li><p><strong>findmax</strong> – Index of maximum frequency (int)</p></li>
+<li><p><strong>Ndec</strong> – SHD order</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>List of numpy matrices containing the SHDs of STFTs of array channels</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="higrid.dpd.getBmat">
+<code class="descclassname">higrid.dpd.</code><code class="descname">getBmat</code><span class="sig-paren">(</span><em>micstruct</em>, <em>findmin</em>, <em>findmax</em>, <em>NFFT</em>, <em>Fs</em>, <em>Ndec</em><span class="sig-paren">)</span><a class="headerlink" href="#higrid.dpd.getBmat" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the array (e.g. em32) specific response equalisation matrix, B</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>micstruct</strong> – Dictionary containing microphone properties</p></li>
+<li><p><strong>findmin</strong> – Index of minimum frequency (int)</p></li>
+<li><p><strong>findmax</strong> – Index of maximum frequency (int)</p></li>
+<li><p><strong>NFFT</strong> – FFT size</p></li>
+<li><p><strong>Fs</strong> – Sampling rate (Hz)</p></li>
+<li><p><strong>Ndec</strong> – SHD order</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Response equalisation matrices, B, for each frequency index</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="higrid.dpd.getWY">
+<code class="descclassname">higrid.dpd.</code><code class="descname">getWY</code><span class="sig-paren">(</span><em>micstruct</em>, <em>Ndec</em><span class="sig-paren">)</span><a class="headerlink" href="#higrid.dpd.getWY" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the array (e.g. em32) specific cubature and the SHD matrices, W and Y.H</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>micstruct</strong> – Dictionary containing microphone properties</p></li>
+<li><p><strong>Ndec</strong> – SHD order to be used in the cubature</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Array specific cubature and the SHD matrices, W and Y.H</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="higrid.dpd.getanmval">
+<code class="descclassname">higrid.dpd.</code><code class="descname">getanmval</code><span class="sig-paren">(</span><em>pvec</em>, <em>B</em>, <em>Y</em>, <em>W</em><span class="sig-paren">)</span><a class="headerlink" href="#higrid.dpd.getanmval" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the SHD for a single time-frequency bin</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>pvec</strong> – Vector containing M-channel STFTs of a single time-frequency bin</p></li>
+<li><p><strong>B</strong> – Response equalisation matrix</p></li>
+<li><p><strong>Y</strong> – SHD matrix</p></li>
+<li><p><strong>W</strong> – Cubature matrix</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>SHD for a single time-frequency bin; (N+1)^2 by 1</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="higrid.dpd.getpvec">
+<code class="descclassname">higrid.dpd.</code><code class="descname">getpvec</code><span class="sig-paren">(</span><em>P</em>, <em>tind</em>, <em>find</em><span class="sig-paren">)</span><a class="headerlink" href="#higrid.dpd.getpvec" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a single M-channel (e.g. 32 channel for em32) time-frequency bin</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>P</strong> – List of STFTs of each channel</p></li>
+<li><p><strong>tind</strong> – Time index</p></li>
+<li><p><strong>find</strong> – Frequency index</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Selected time frequency bin containing N (e.g. 32) channels</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="higrid-emulate-module">
+<h2>higrid.emulate module<a class="headerlink" href="#higrid-emulate-module" title="Permalink to this headline">¶</a></h2>
+<p>Submodule used for creating emulated recordings using acoustic impulse responses</p>
+<span class="target" id="module-higrid.emulate"></span><dl class="function">
+<dt id="higrid.emulate.combinescene">
+<code class="descclassname">higrid.emulate.</code><code class="descname">combinescene</code><span class="sig-paren">(</span><em>sg1</em>, <em>sg2</em><span class="sig-paren">)</span><a class="headerlink" href="#higrid.emulate.combinescene" title="Permalink to this definition">¶</a></dt>
+<dd><p>Linearly combines two scenes pertaining to em32 recordings</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>sg1</strong> – Scene 1 (32 x samples numpy array)</p></li>
+<li><p><strong>sg2</strong> – Scene 2 (32 x samples numpy array)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Combined scene (32 x samples numpy array)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="higrid.emulate.composescene">
+<code class="descclassname">higrid.emulate.</code><code class="descname">composescene</code><span class="sig-paren">(</span><em>filelist</em>, <em>dirset</em>, <em>samples=(0</em>, <em>96000)</em>, <em>roomstr='ii-s05'</em><span class="sig-paren">)</span><a class="headerlink" href="#higrid.emulate.composescene" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compose an emulated scene using a number of anechoic sound signals and measured AIRs</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>filelist</strong> – List of files to be used</p></li>
+<li><p><strong>dirset</strong> – Set containing tuples with (X, Y, Z) as the AIR indices</p></li>
+<li><p><strong>samples</strong> – Start and end points of samples to be prococessed as a tuple (sstart, send)</p></li>
+<li><p><strong>roomstr</strong> – Used to select from a specific directory (default is ‘ii-s05’ as we only provided AIRs for that room)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>32 channels of audio from an emulated em32 recording.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="higrid.emulate.emptyscene">
+<code class="descclassname">higrid.emulate.</code><code class="descname">emptyscene</code><span class="sig-paren">(</span><em>sha=(32</em>, <em>48000)</em><span class="sig-paren">)</span><a class="headerlink" href="#higrid.emulate.emptyscene" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns an empty scene</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>sha</strong> – Tuple containing number of channels and number of samples (nchan, samples) (default = (32, 48000))</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>An empty scene containing nchan channels and the given number of samples (empty numpy array)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="higrid.emulate.emulatescene">
+<code class="descclassname">higrid.emulate.</code><code class="descname">emulatescene</code><span class="sig-paren">(</span><em>insig</em>, <em>gain</em>, <em>irspath</em><span class="sig-paren">)</span><a class="headerlink" href="#higrid.emulate.emulatescene" title="Permalink to this definition">¶</a></dt>
+<dd><p>Emulates a scene by convolving a source input signal with em32 AIRs</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>insig</strong> – (Single-channel) input signal</p></li>
+<li><p><strong>gain</strong> – Gain (scalar)</p></li>
+<li><p><strong>irspath</strong> – Path to the AIRs to be used</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>32 channels of audio from an emulated em32 recording.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="higrid.emulate.realrec">
+<code class="descclassname">higrid.emulate.</code><code class="descname">realrec</code><span class="sig-paren">(</span><em>dirpath</em>, <em>prefix</em>, <em>samples</em><span class="sig-paren">)</span><a class="headerlink" href="#higrid.emulate.realrec" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a scene from real em32 recordings</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>dirpath</strong> – Path containing the em32 recordings</p></li>
+<li><p><strong>prefix</strong> – </p></li>
+<li><p><strong>samples</strong> – Number of samples to use</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>32 channel em32 recording</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="higrid-higridestimate-module">
+<h2>higrid.higridestimate module<a class="headerlink" href="#higrid-higridestimate-module" title="Permalink to this headline">¶</a></h2>
+<p>Main submodule that includes functions used in DOA estimation with the HiGRID algorithm</p>
+<span class="target" id="module-higrid.higridestimate"></span><dl class="function">
+<dt id="higrid.higridestimate.binstoprocess_dpd">
+<code class="descclassname">higrid.higridestimate.</code><code class="descname">binstoprocess_dpd</code><span class="sig-paren">(</span><em>P</em>, <em>fL</em>, <em>fH</em>, <em>Fs</em>, <em>NFFT</em>, <em>Jnu</em>, <em>Jtau</em>, <em>Ndec</em>, <em>thr</em><span class="sig-paren">)</span><a class="headerlink" href="#higrid.higridestimate.binstoprocess_dpd" title="Permalink to this definition">¶</a></dt>
+<dd><p>Select the bins with unit effective rank of the spatial autocorrelation matrix</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>P</strong> – STFTs of the RSMA (e.g. em32) recordings</p></li>
+<li><p><strong>fL</strong> – Lower frequency bound (Hz)</p></li>
+<li><p><strong>fH</strong> – Upper frequency bound (Hz)</p></li>
+<li><p><strong>Fs</strong> – Sampling rate (Hz)</p></li>
+<li><p><strong>NFFT</strong> – FFT size</p></li>
+<li><p><strong>Jnu</strong> – Frequency smoothing window size</p></li>
+<li><p><strong>Jtau</strong> – Time smoothing window size</p></li>
+<li><p><strong>Ndec</strong> – SHD order</p></li>
+<li><p><strong>thr</strong> – DPD threshold</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Time and frequency indices of the bins that are selected for HiGRID DOA estimation</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="higrid.higridestimate.binstoprocess_onset">
+<code class="descclassname">higrid.higridestimate.</code><code class="descname">binstoprocess_onset</code><span class="sig-paren">(</span><em>Pnm0</em>, <em>sg</em>, <em>fL</em>, <em>fH</em>, <em>Fs</em>, <em>NFFT</em>, <em>olap</em><span class="sig-paren">)</span><a class="headerlink" href="#higrid.higridestimate.binstoprocess_onset" title="Permalink to this definition">¶</a></dt>
+<dd><p>Select the bins with energy higher than RMS mean</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>Pnm0</strong> – 0th-order SHD coefficient STFT matrix</p></li>
+<li><p><strong>sg</strong> – 32xlength audio signals from em32</p></li>
+<li><p><strong>fL</strong> – Lower frequency bound</p></li>
+<li><p><strong>fH</strong> – Higher frequency bound</p></li>
+<li><p><strong>Fs</strong> – Sampling rate (Hz)</p></li>
+<li><p><strong>NFFT</strong> – FFT size</p></li>
+<li><p><strong>olap</strong> – (NFFT / olap) is the hop_size of the STFT</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Time and frequency indices of the bins that are selected for HiGRID DOA estimation</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="higrid.higridestimate.higrid">
+<code class="descclassname">higrid.higridestimate.</code><code class="descname">higrid</code><span class="sig-paren">(</span><em>mvec</em>, <em>freq</em>, <em>Ndec</em>, <em>tLevel</em>, <em>pixeldict</em><span class="sig-paren">)</span><a class="headerlink" href="#higrid.higridestimate.higrid" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the multiresolution HiGRID decomposition for a single TF bin</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>mvec</strong> – SHD coefficients of the TF bin to be analysed</p></li>
+<li><p><strong>freq</strong> – Frequency (in Hz)</p></li>
+<li><p><strong>Ndec</strong> – SHD decomposition level</p></li>
+<li><p><strong>tLevel</strong> – Resolution level</p></li>
+<li><p><strong>pixeldict</strong> – Precalculated eigenvalue and eigenvector matrices (see loadpixbasis in utils.py)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Multiresolution HiGRID decomposition for a single TF bin</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="higrid.higridestimate.higridestimate">
+<code class="descclassname">higrid.higridestimate.</code><code class="descname">higridestimate</code><span class="sig-paren">(</span><em>sg</em>, <em>pixeldict</em>, <em>maxnum=1000</em>, <em>Fs=48000.0</em>, <em>Ndec=4</em>, <em>NFFT=1024</em>, <em>olap=16</em>, <em>tLevel=3</em>, <em>dpdflag=False</em>, <em>fL=2608.0</em>, <em>fH=5216.0</em>, <em>thr=6</em><span class="sig-paren">)</span><a class="headerlink" href="#higrid.higridestimate.higridestimate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the DOA estimates for multiple sources using HiGRID</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>dpdflag</strong> – </p></li>
+<li><p><strong>sg</strong> – Individual audio channels (32 channels) of em32</p></li>
+<li><p><strong>pixeldict</strong> – Precalculated eigenvalue and eigenvector matrices (see loadpixbasis in utils.py)</p></li>
+<li><p><strong>maxnum</strong> – Maximum number of bins to be processed (default = 1000)</p></li>
+<li><p><strong>Fs</strong> – Sampling frequency in Hz (default = 48000)</p></li>
+<li><p><strong>Ndec</strong> – SHD decomposition order (default = 4)</p></li>
+<li><p><strong>NFFT</strong> – FFT size (default = 1024)</p></li>
+<li><p><strong>olap</strong> – (NFFT / olap) is the hop_size of the STFT (default = 16)</p></li>
+<li><p><strong>tLevel</strong> – Tree decomposition level (default = 3)</p></li>
+<li><p><strong>dpdflag</strong> – If True use direct-path dominance to select TF bins (default = False)</p></li>
+<li><p><strong>fL</strong> – Lower frequency bound (in Hz) (default = 2608.)</p></li>
+<li><p><strong>fH</strong> – Upper frequency bound (in Hz) (default = 5216.)</p></li>
+<li><p><strong>thr</strong> – DPD threshold (default = 6)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Azimuth and elevation angles of the identified sources with respect to the array front direction (in radians)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="higrid.higridestimate.preprocessinput">
+<code class="descclassname">higrid.higridestimate.</code><code class="descname">preprocessinput</code><span class="sig-paren">(</span><em>insig</em>, <em>Nmax</em>, <em>NFFT</em>, <em>olap</em><span class="sig-paren">)</span><a class="headerlink" href="#higrid.higridestimate.preprocessinput" title="Permalink to this definition">¶</a></dt>
+<dd><p>Preprocess the input to represent in TF domain and then obtain the SHD</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>insig</strong> – (32 x length) matrix containing the audio signal channels from em32</p></li>
+<li><p><strong>Nmax</strong> – Maximum SHD order</p></li>
+<li><p><strong>NFFT</strong> – FFT size</p></li>
+<li><p><strong>olap</strong> – (NFFT / olap) is the hop_size of the STFT</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>SHD of the STFT and the STFT of the microphone array recordings</p>
+</dd>
+</dl>
+<p>Notes:
+1. Currently accepts 32 channels (Eigenmike em32) is hard coded into this method.
+2. Uses STFT from madmom library since onset detection is also done by it. This can be replaced with any other TF
+bin selection method (e.g. direct-path dominance, RENT, soundfield directivity etc.).</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="higrid.higridestimate.selecttreet">
+<code class="descclassname">higrid.higridestimate.</code><code class="descname">selecttreet</code><span class="sig-paren">(</span><em>tr</em>, <em>er</em>, <em>level</em>, <em>idx</em>, <em>mvec</em>, <em>k</em>, <em>ra</em>, <em>Nmax</em>, <em>pixeldict</em><span class="sig-paren">)</span><a class="headerlink" href="#higrid.higridestimate.selecttreet" title="Permalink to this definition">¶</a></dt>
+<dd><p>Expand the multiresolution HiGRID map representation based on its total spatial entropy</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>tr</strong> – Tree representation of the SRPD map (as a defaultdict object)</p></li>
+<li><p><strong>er</strong> – Total spatial entropy of the representation before increasing resolution</p></li>
+<li><p><strong>level</strong> – Resolution level</p></li>
+<li><p><strong>idx</strong> – Index of the pixel to decompose</p></li>
+<li><p><strong>mvec</strong> – SHD coefficients of the TF bin to be analysed</p></li>
+<li><p><strong>k</strong> – Wave number (2*pi*f/c)</p></li>
+<li><p><strong>ra</strong> – Radius of the microphone array</p></li>
+<li><p><strong>Nmax</strong> – Maximum order of the SHD to be used</p></li>
+<li><p><strong>pixeldict</strong> – Precalculated eigenvalue and eigenvector matrices (see loadpixbasis in utils.py)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>New nodes after expanding the representation (if new entropy is less than the old entropy)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="higrid.higridestimate.srpd">
+<code class="descclassname">higrid.higridestimate.</code><code class="descname">srpd</code><span class="sig-paren">(</span><em>mvec</em>, <em>k</em>, <em>ra</em>, <em>Nmax</em>, <em>w</em>, <em>V</em><span class="sig-paren">)</span><a class="headerlink" href="#higrid.higridestimate.srpd" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate the Steered Response Power Density (SRPD)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>mvec</strong> – SHD coefficients for the TF bin to be analysed</p></li>
+<li><p><strong>k</strong> – Wave number (2*pi*f/c)</p></li>
+<li><p><strong>ra</strong> – Radius of the microphone array</p></li>
+<li><p><strong>Nmax</strong> – Maximum SHD order to be used</p></li>
+<li><p><strong>w</strong> – Diagonal eigenvalue matrix</p></li>
+<li><p><strong>V</strong> – Reduced eigenvector matrix</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>SRPD for the given pixel</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="higrid.higridestimate.treeEntropy">
+<code class="descclassname">higrid.higridestimate.</code><code class="descname">treeEntropy</code><span class="sig-paren">(</span><em>tr</em><span class="sig-paren">)</span><a class="headerlink" href="#higrid.higridestimate.treeEntropy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return spatial entropy of the representation</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>tr</strong> – Tree representation of the SRPD map (as a defaultdict object)</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Total spatial entropy of the representation</p>
+</dd>
+</dl>
+<p>Note: We are using the Cython version of this function. Please see cTreei.pyx</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="higrid.higridestimate.treeroott">
+<code class="descclassname">higrid.higridestimate.</code><code class="descname">treeroott</code><span class="sig-paren">(</span><em>mvec</em>, <em>k</em>, <em>ra</em>, <em>Nmax</em>, <em>pixeldict</em>, <em>rlevel=1</em><span class="sig-paren">)</span><a class="headerlink" href="#higrid.higridestimate.treeroott" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate  SRPD for the all of the 3x2^(2nside) pixels at the lowest resolution level</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>mvec</strong> – SHD coefficients of the TF bin to be analysed</p></li>
+<li><p><strong>k</strong> – Wave number (2*pi*f/c)</p></li>
+<li><p><strong>ra</strong> – Radius of the microphone array</p></li>
+<li><p><strong>Nmax</strong> – Maximum order of the SHD to be used</p></li>
+<li><p><strong>pixeldict</strong> – Precalculated eigenvalue and eigenvector matrices (see loadpixbasis in utils.py)</p></li>
+<li><p><strong>rlevel</strong> – Resolution level (default=1; corresponds to the lowest level with 12 pixels)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Dictionary with keys in the form (level, index) and values containing SRPD value of that pixel</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="higrid-shd-module">
+<h2>higrid.shd module<a class="headerlink" href="#higrid-shd-module" title="Permalink to this headline">¶</a></h2>
+<p>Submodule that includes functions related to spherical harmonic decomposition (SHD)</p>
+<span class="target" id="module-higrid.shd"></span><dl class="function">
+<dt id="higrid.shd.getYnmtlookup">
+<code class="descclassname">higrid.shd.</code><code class="descname">getYnmtlookup</code><span class="sig-paren">(</span><em>filepath</em><span class="sig-paren">)</span><a class="headerlink" href="#higrid.shd.getYnmtlookup" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load the pre-computed spherical harmonics matrices</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>filepath</strong> – Location of the pickled files</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Pre-computed spherical harmonics matrices</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="higrid.shd.selectdeclevel">
+<code class="descclassname">higrid.shd.</code><code class="descname">selectdeclevel</code><span class="sig-paren">(</span><em>freq</em><span class="sig-paren">)</span><a class="headerlink" href="#higrid.shd.selectdeclevel" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate an appropriate SHD order for the given frequency</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>freq</strong> – Frequency (in Hz)</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Decomposition order</p>
+</dd>
+</dl>
+<p>Note: This is not used since we are looking at frequencies above 2607 Hz only. Hence Nmax=4 is used</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="higrid.shd.shd_all">
+<code class="descclassname">higrid.shd.</code><code class="descname">shd_all</code><span class="sig-paren">(</span><em>channels</em>, <em>Nmax=4</em><span class="sig-paren">)</span><a class="headerlink" href="#higrid.shd.shd_all" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate all SHD coefficients for the given em32 recording</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>channels</strong> – 32 channels of audio from Eigenmike em32</p></li>
+<li><p><strong>Nmax</strong> – Maximum SHD order to be calculated (default = 4)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>List including (Nmax+1)^2 (complex-valued) SHD coefficients</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="higrid.shd.shd_nm">
+<code class="descclassname">higrid.shd.</code><code class="descname">shd_nm</code><span class="sig-paren">(</span><em>channels</em>, <em>n</em>, <em>m</em><span class="sig-paren">)</span><a class="headerlink" href="#higrid.shd.shd_nm" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate the n-the order, m-th degree SHD coefficients for the given Eigenmike em32 channels</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>channels</strong> – 32 channels of audio from Eigenmike em32</p></li>
+<li><p><strong>n</strong> – SHD coefficient order</p></li>
+<li><p><strong>m</strong> – SHD coefficient degree</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Non-equalised SHD coefficients (p_nm) for the given em32 recording</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="higrid-testpos3d-module">
+<h2>higrid.testpos3d module<a class="headerlink" href="#higrid-testpos3d-module" title="Permalink to this headline">¶</a></h2>
+<p>Submodule for selecting emulated source positions</p>
+<span class="target" id="module-higrid.testpos3d"></span><dl class="function">
+<dt id="higrid.testpos3d.angle">
+<code class="descclassname">higrid.testpos3d.</code><code class="descname">angle</code><span class="sig-paren">(</span><em>tupl1</em>, <em>tupl2</em>, <em>mtupl</em><span class="sig-paren">)</span><a class="headerlink" href="#higrid.testpos3d.angle" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the angle between two vectors</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>tupl1</strong> – Tuple containing the coordinates of a point</p></li>
+<li><p><strong>tupl2</strong> – Tuple containing the coordinates of another point</p></li>
+<li><p><strong>mtupl</strong> – Tuple containing the coordinates of origin</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Angle between the two vectors (in radians)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="higrid.testpos3d.histclust">
+<code class="descclassname">higrid.testpos3d.</code><code class="descname">histclust</code><span class="sig-paren">(</span><em>drrmat</em>, <em>dind</em>, <em>N</em>, <em>numthr</em><span class="sig-paren">)</span><a class="headerlink" href="#higrid.testpos3d.histclust" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a number of clusters of sources positions based on their D/R ratios</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>drrmat</strong> – Matrix containing coordinates of source oposition on the grid and its D/R ratio</p></li>
+<li><p><strong>dind</strong> – Histogram bin to choose</p></li>
+<li><p><strong>N</strong> – Number of bins to use</p></li>
+<li><p><strong>numthr</strong> – At least this many sources in a given bin has to be present</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="higrid.testpos3d.measgrid">
+<code class="descclassname">higrid.testpos3d.</code><code class="descname">measgrid</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#higrid.testpos3d.measgrid" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the measurement positions and DRR values for emulations</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Defaultdict containing tuple (xindex, yindex, zindex) as keys and DRR as values</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="higrid.testpos3d.select">
+<code class="descclassname">higrid.testpos3d.</code><code class="descname">select</code><span class="sig-paren">(</span><em>grd</em>, <em>n=4</em>, <em>dind=3</em>, <em>dclust=8</em>, <em>thcond=0.7853981633974483</em><span class="sig-paren">)</span><a class="headerlink" href="#higrid.testpos3d.select" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a single test scene instance</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>grd</strong> – Measurement grid from measgrid()</p></li>
+<li><p><strong>n</strong> – Number of sources to choose (default = 4)</p></li>
+<li><p><strong>dind</strong> – Cluster index (default = 3)</p></li>
+<li><p><strong>dclust</strong> – Number of bins to use in histogram for D/R ratio clustering (default = 8)</p></li>
+<li><p><strong>thcond</strong> – Minimum angle between consecutive sources (in radians) (default = pi/4)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>One test instance and the average D/R ratio at the selected positions</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="higrid.testpos3d.selectset">
+<code class="descclassname">higrid.testpos3d.</code><code class="descname">selectset</code><span class="sig-paren">(</span><em>grd</em>, <em>n=4</em>, <em>dind=3</em>, <em>dclust=8</em>, <em>thcond=0.7853981633974483</em>, <em>trialcount=1</em><span class="sig-paren">)</span><a class="headerlink" href="#higrid.testpos3d.selectset" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a number of test scene instances with similar D/R ratio and a prescribed minimum angle between them</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>grd</strong> – Measurement grid from measgrid()</p></li>
+<li><p><strong>n</strong> – Number of sources to choose (default = 4)</p></li>
+<li><p><strong>dind</strong> – Cluster index (default = 3)</p></li>
+<li><p><strong>dclust</strong> – Number of bins to use in histogram for D/R ratio clustering (default = 8)</p></li>
+<li><p><strong>thcond</strong> – Minimum angle between consecutive sources (in radians) (default = pi/4)</p></li>
+<li><p><strong>trialcount</strong> – Number of randomly selected scenes (default = 1)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>List containing trialcount number of test instances and the average D/R ratio at the selected positions</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="higrid.testpos3d.vdist">
+<code class="descclassname">higrid.testpos3d.</code><code class="descname">vdist</code><span class="sig-paren">(</span><em>a</em>, <em>b</em><span class="sig-paren">)</span><a class="headerlink" href="#higrid.testpos3d.vdist" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the angle between two vectors</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>a</strong> – Vector 1</p></li>
+<li><p><strong>b</strong> – Vector 2</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Normalised angle [-1,+1] between the two vectors</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="higrid-treeutils-module">
+<h2>higrid.treeutils module<a class="headerlink" href="#higrid-treeutils-module" title="Permalink to this headline">¶</a></h2>
+<p>Submodule including some utility functions for manipulating tree representation</p>
+<span class="target" id="module-higrid.treeutils"></span><dl class="function">
+<dt id="higrid.treeutils.children">
+<code class="descclassname">higrid.treeutils.</code><code class="descname">children</code><span class="sig-paren">(</span><em>level</em>, <em>idx</em><span class="sig-paren">)</span><a class="headerlink" href="#higrid.treeutils.children" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return all the children of the Healpix pixel idx at level (in nested format)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>level</strong> – Resolution level</p></li>
+<li><p><strong>idx</strong> – Pixel index</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>All the parents of the pixel</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="higrid.treeutils.parent">
+<code class="descclassname">higrid.treeutils.</code><code class="descname">parent</code><span class="sig-paren">(</span><em>level</em>, <em>idx</em><span class="sig-paren">)</span><a class="headerlink" href="#higrid.treeutils.parent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the parent of a given healpix pixel (in nested format)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>level</strong> – Resolution level</p></li>
+<li><p><strong>idx</strong> – Index at the given level</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Tuple (lvl, idp) including the level and the index of the parent pixel</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="higrid.treeutils.parents">
+<code class="descclassname">higrid.treeutils.</code><code class="descname">parents</code><span class="sig-paren">(</span><em>level</em>, <em>idx</em><span class="sig-paren">)</span><a class="headerlink" href="#higrid.treeutils.parents" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return all the (grand-)parents of the Healpix pixel idx at level (in nested format)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>level</strong> – Resolution level</p></li>
+<li><p><strong>idx</strong> – Pixel index</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>All the parents of the pixel</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="higrid.treeutils.siblings">
+<code class="descclassname">higrid.treeutils.</code><code class="descname">siblings</code><span class="sig-paren">(</span><em>level</em>, <em>idx</em><span class="sig-paren">)</span><a class="headerlink" href="#higrid.treeutils.siblings" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the siblings of the Healpix pixel idx at level (in nested format)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>level</strong> – Resolution level</p></li>
+<li><p><strong>idx</strong> – Pixel index</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Return the siblings of the pixel</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="higrid-utils-module">
+<h2>higrid.utils module<a class="headerlink" href="#higrid-utils-module" title="Permalink to this headline">¶</a></h2>
+<p>Submodule including some general utility functions</p>
+<span class="target" id="module-higrid.utils"></span><dl class="function">
+<dt id="higrid.utils.cart2sph">
+<code class="descclassname">higrid.utils.</code><code class="descname">cart2sph</code><span class="sig-paren">(</span><em>x</em>, <em>y</em>, <em>z</em><span class="sig-paren">)</span><a class="headerlink" href="#higrid.utils.cart2sph" title="Permalink to this definition">¶</a></dt>
+<dd><p>r, th, ph = cart2sph(x, y, z)</p>
+<p>Return the spherical coordinate representation of point(s) given in
+Cartesian coordinates</p>
+<p>As usual r is the radius, th is the elevation angle defined from the
+positive z axis and ph is the azimuth angle defined from the positive x axis</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="higrid.utils.fulltree">
+<code class="descclassname">higrid.utils.</code><code class="descname">fulltree</code><span class="sig-paren">(</span><em>tLevel=3</em>, <em>val=0</em><span class="sig-paren">)</span><a class="headerlink" href="#higrid.utils.fulltree" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a defaultdict containing all the pixels in a healpix grid, initialised with the default value</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>tLevel</strong> – Healpix resolution level (default = 3)</p></li>
+<li><p><strong>val</strong> – Value of each pixel (default = 0)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>defaultdict containing all the pixels in the healpix grid at the given resolution</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="higrid.utils.histtotree">
+<code class="descclassname">higrid.utils.</code><code class="descname">histtotree</code><span class="sig-paren">(</span><em>H</em>, <em>the</em>, <em>phe</em>, <em>tLevel</em><span class="sig-paren">)</span><a class="headerlink" href="#higrid.utils.histtotree" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert 2D DOA histogram to a healpix tree representation</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>H</strong> – 2D DOA histogram matrix</p></li>
+<li><p><strong>the</strong> – Array of azimuth angles corresponding to columns of the 2D histogram matrix</p></li>
+<li><p><strong>phe</strong> – Array of inclination angles corresponding to columns of the 2D histogram matrix</p></li>
+<li><p><strong>tLevel</strong> – Healpix resolution level (default = 3)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>defaultdict containing healpix grid st the given resolution containing the 2D histogram</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="higrid.utils.loadpixbasis">
+<code class="descclassname">higrid.utils.</code><code class="descname">loadpixbasis</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#higrid.utils.loadpixbasis" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="higrid.utils.node2vec">
+<code class="descclassname">higrid.utils.</code><code class="descname">node2vec</code><span class="sig-paren">(</span><em>level</em>, <em>idx</em><span class="sig-paren">)</span><a class="headerlink" href="#higrid.utils.node2vec" title="Permalink to this definition">¶</a></dt>
+<dd><p>Converts the centre direction of a Healpix pixel to a unit vector</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>level</strong> – Resolution level</p></li>
+<li><p><strong>idx</strong> – Index of the pixel</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>3x1 array containing the unit vector</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="higrid.utils.processirs">
+<code class="descclassname">higrid.utils.</code><code class="descname">processirs</code><span class="sig-paren">(</span><em>irs</em>, <em>monosnd</em><span class="sig-paren">)</span><a class="headerlink" href="#higrid.utils.processirs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns an emulated recording of em32 using acoustic impulse responses and an anechoic sound signal</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>irs</strong> – Acoustic impulse responses obtained using em32</p></li>
+<li><p><strong>monosnd</strong> – Monophonic sound signal to be convolved with the AIRs</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>32-channels emulated recording of em32 as a numpy array</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="higrid.utils.selectbinindx">
+<code class="descclassname">higrid.utils.</code><code class="descname">selectbinindx</code><span class="sig-paren">(</span><em>fidx</em>, <em>tidx</em>, <em>Pnm</em>, <em>Ndec=4</em><span class="sig-paren">)</span><a class="headerlink" href="#higrid.utils.selectbinindx" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the SHD vectors of a given time-frequency bin</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>fidx</strong> – Frequency index</p></li>
+<li><p><strong>tidx</strong> – Time index</p></li>
+<li><p><strong>Pnm</strong> – List of SHD-STFT matrices</p></li>
+<li><p><strong>Ndec</strong> – SHD order (default = 4)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>SHD vector, SHD order</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="higrid.utils.selectsome">
+<code class="descclassname">higrid.utils.</code><code class="descname">selectsome</code><span class="sig-paren">(</span><em>idx</em>, <em>idy</em>, <em>maxnum</em><span class="sig-paren">)</span><a class="headerlink" href="#higrid.utils.selectsome" title="Permalink to this definition">¶</a></dt>
+<dd><p>Randomly selects a given number of time-frequency bins</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>idx</strong> – List containing frequency indices of selected bins</p></li>
+<li><p><strong>idy</strong> – List containing time indices of selected bins</p></li>
+<li><p><strong>maxnum</strong> – Maximum number of bins to select (in None, return all indices)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="higrid.utils.sph2cart">
+<code class="descclassname">higrid.utils.</code><code class="descname">sph2cart</code><span class="sig-paren">(</span><em>r</em>, <em>th</em>, <em>ph</em><span class="sig-paren">)</span><a class="headerlink" href="#higrid.utils.sph2cart" title="Permalink to this definition">¶</a></dt>
+<dd><p>Converts vector in spherical coordinates to Cartesian coordinates</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>r</strong> – Radius</p></li>
+<li><p><strong>th</strong> – Azimuth angle</p></li>
+<li><p><strong>ph</strong> – Inclination angle</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Vector in Cartesian coordinates</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="higrid.utils.sph_jnyn">
+<code class="descclassname">higrid.utils.</code><code class="descname">sph_jnyn</code><span class="sig-paren">(</span><em>N</em>, <em>kr</em><span class="sig-paren">)</span><a class="headerlink" href="#higrid.utils.sph_jnyn" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns spherical Bessel functions of the first (jn) and second kind (yn) and their derivatives</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>N</strong> – Function order</p></li>
+<li><p><strong>kr</strong> – Argument</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>jn, jn’, yn, yn’</p>
+</dd>
+</dl>
+<p>NOTE: Emulates the behaviour of sph_jnyn() in early versions of scipy (&lt; 1.0.0).</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="higrid.utils.wavread">
+<code class="descclassname">higrid.utils.</code><code class="descname">wavread</code><span class="sig-paren">(</span><em>wave_file</em><span class="sig-paren">)</span><a class="headerlink" href="#higrid.utils.wavread" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the contents of a wave file</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>wave_file</strong> – Path to the wave_file to be read</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>(signal, sampling rate, number of channels)</p>
+</dd>
+</dl>
+<p>NOTE: Wavread solution was adapted from <a class="reference external" href="https://bit.ly/2Ubs9Jp">https://bit.ly/2Ubs9Jp</a></p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-higrid">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-higrid" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="modules.html" class="btn btn-neutral float-left" title="higrid" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Huseyin Hacihabiboglu
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

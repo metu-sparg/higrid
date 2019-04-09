@@ -1,0 +1,4 @@
+{
+  "bmark.py::test_my_stuff": true,
+  "bmark.py::test_my_stuff_different_arg": true
+}

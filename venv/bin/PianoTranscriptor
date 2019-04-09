@@ -1,0 +1,162 @@
+#!/Users/huseyinhacihabiboglu/PycharmProjects/higrid/venv/bin/python
+# encoding: utf-8
+"""
+PianoTranscriptor (piano) note transcription algorithm.
+
+"""
+
+from __future__ import absolute_import, division, print_function
+
+import argparse
+
+import numpy as np
+
+from madmom.audio import SignalProcessor
+from madmom.audio.filters import midi2hz
+from madmom.features import (ActivationsProcessor, NotePeakPickingProcessor,
+                             RNNPianoNoteProcessor)
+from madmom.io import write_midi, write_notes
+from madmom.processors import IOProcessor, io_arguments
+from madmom.utils import expand_notes
+
+
+def write_mirex(notes, filename, duration=0.6):
+    """
+    Write the frequencies of the notes to file (in MIREX format).
+
+    Parameters
+    ----------
+    notes : numpy array, shape (num_notes, 2)
+        Notes, one per row (column definition see notes).
+    filename : str or file handle
+        Output filename or handle.
+    duration : float, optional
+        Note duration if not defined by `notes`.
+
+    Returns
+    -------
+    numpy array
+        Notes in MIREX format.
+
+    Notes
+    -----
+    The note columns format must be (duration and velocity being optional):
+
+    'note_time' 'MIDI_note' ['duration' ['MIDI_velocity']]
+
+    The output format required by MIREX is:
+
+    'onset_time' 'offset_time' 'note_frequency'
+
+    """
+    # expand the notes if needed
+    notes = expand_notes(notes, duration)
+    # report offset time instead of duration
+    notes = np.vstack((notes[:, 0], notes[:, 0] + notes[:, 2],
+                       midi2hz(notes[:, 1]))).T
+    # MIREX format: onset \t offset \t frequency
+    write_notes(notes, filename, fmt=list(('%.3f', '%.3f', '%.1f', )))
+
+
+def main():
+    """PianoTranscriptor"""
+
+    # define parser
+    p = argparse.ArgumentParser(
+        formatter_class=argparse.RawDescriptionHelpFormatter, description='''
+    The PianoTranscriptor program detects all notes (onsets) in an audio file
+    according to the algorithm described in:
+
+    "Polyphonic Piano Note Transcription with Recurrent Neural Networks"
+    Sebastian Böck and Markus Schedl.
+    Proceedings of the 37th International Conference on Acoustics, Speech and
+    Signal Processing (ICASSP), 2012.
+
+    Instead of 'LSTM' units, the current version uses 'tanh' units.
+
+    This program can be run in 'single' file mode to process a single audio
+    file and write the detected notes to STDOUT or the given output file.
+
+      $ PianoTranscriptor single INFILE [-o OUTFILE]
+
+    If multiple audio files should be processed, the program can also be run
+    in 'batch' mode to save the detected notes to files with the given suffix.
+
+      $ PianoTranscriptor batch [-o OUTPUT_DIR] [-s OUTPUT_SUFFIX] FILES
+
+    If no output directory is given, the program writes the files with the
+    detected notes to the same location as the audio files.
+
+    The 'pickle' mode can be used to store the used parameters to be able to
+    exactly reproduce experiments.
+
+    ''')
+    # version
+    p.add_argument('--version', action='version',
+                   version='PianoTranscriptor.2013')
+    # input/output arguments
+    io_arguments(p, output_suffix='.notes.txt')
+    ActivationsProcessor.add_arguments(p)
+    # signal processing arguments
+    SignalProcessor.add_arguments(p, norm=False, gain=0, start=True, stop=True)
+    # peak picking arguments
+    NotePeakPickingProcessor.add_arguments(p, threshold=0.35, smooth=0.09,
+                                           combine=0.05)
+    # midi arguments
+    p.add_argument('--midi', dest='output_format', action='store_const',
+                   const='midi', help='save as MIDI')
+    # mirex stuff
+    p.add_argument('--mirex', dest='output_format', action='store_const',
+                   const='mirex', help='use the MIREX output format')
+
+    # parse arguments
+    args = p.parse_args()
+
+    # set immutable defaults
+    args.fps = 100
+    args.pre_max = 1. / args.fps
+    args.post_max = 1. / args.fps
+
+    # set the suffix for midi files
+    if args.output_format == 'midi':
+        args.output_suffix = '.mid'
+
+    # print arguments
+    if args.verbose:
+        print(args)
+
+    # input processor
+    if args.load:
+        # load the activations from file
+        in_processor = ActivationsProcessor(mode='r', **vars(args))
+    else:
+        # use a RNN to predict the notes
+        in_processor = RNNPianoNoteProcessor(**vars(args))
+
+    # output processor
+    if args.save:
+        # save the RNN note activations to file
+        out_processor = ActivationsProcessor(mode='w', **vars(args))
+    else:
+        # perform peak picking on the activation function
+        peak_picking = NotePeakPickingProcessor(**vars(args))
+        # output everything in the right format
+        if args.output_format is None:
+            output = write_notes
+        elif args.output_format == 'midi':
+            output = write_midi
+        elif args.output_format == 'mirex':
+            output = write_mirex
+        else:
+            raise ValueError('unknown output format: %s' % args.output_format)
+        out_processor = [peak_picking, output]
+
+    # create an IOProcessor
+    processor = IOProcessor(in_processor, out_processor)
+
+    # and call the processing function
+    args.func(processor, **vars(args))
+
+
+if __name__ == '__main__':
+    main()
