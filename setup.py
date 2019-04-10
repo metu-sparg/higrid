@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='higrid',
-    version='0.1',
+    version='0.1.0',
     packages=['higrid'],
     url='https://github.com/metu-sparg/higrid',
     license='BSD 3-Clause License',
@@ -34,5 +34,5 @@ setup(
         'Topic :: Multimedia :: Sound/Audio :: Analysis',
         'Topic :: Multimedia :: Sound/Audio :: Capture/Recording',
     ]
-    # download_url='https://github.com/metu-sparg/higrid.git'
+    download_url='https://github.com/metu-sparg/higrid/archive/higrid_v01.tar.gz'
 )
