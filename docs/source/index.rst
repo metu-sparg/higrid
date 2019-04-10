@@ -18,7 +18,7 @@ The method was developed by the researchers in METU Spatial Audio Research Group
 Installation
 ============
 
-Due to one of the key external packages (i.e. healpy) working on Linux and MacOS only (and not Windows), higrid will also only work on Linuz and MacOS, only. The current version was tested on MacOS 10.14.1 with Python 3.6.1.
+Due to one of the key external packages (i.e. healpy) working on Linux and MacOS only (and not Windows), higrid will also only work on Linux and MacOS, only. The current version was tested on Ubuntu 18.04.2 LTS and MacOS 10.14.1 with Python 3.6.1.
 
 Prerequisites
 -------------

@@ -40,7 +40,7 @@ def measgrid():
     mid = (3, 3, 2)
     for ind in range(244):
         sdict[(IDX[ind,0], IDX[ind,1], IDX[ind,2])] = DRR[ind]
-    # No measurement at these positions
+    # Right above and right below the array. We don't use these positions.
     sdict.pop((3, 3, 0))
     sdict.pop((3, 3, 1))
     sdict.pop((3, 3, 3))

@@ -23,7 +23,7 @@ Unless indicated otherwise, all source code files are published under the BSD li
 
 ### Acoustic Impulse Responses (AIR)
 
-Unless indicated otherwise, acoustic impulse response (AIR) data files are distributed under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 license](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode). This dataset along with a documentation is also provided on Zenodo.
+Unless indicated otherwise, acoustic impulse response (AIR) data files are distributed under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 license](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode). This dataset along with a documentation is also provided on Zenodo (https://doi.org/10.5281/zenodo.2635758)
 
 ### Audio recordings
 
