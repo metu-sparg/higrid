@@ -17,6 +17,7 @@ setup(
         'PeakUtils',
         'tqdm',
         'healpy',
+        'Cython',
         ] ,
     classifiers=[
         'Development Status :: 3 - Alpha',
@@ -26,7 +27,7 @@ setup(
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7',
-        'Programming Language :: Python :: 3 :: Only'
+        'Programming Language :: Python :: 3 :: Only',
         'Environment :: Console',
         'Operating System :: MacOS',
         'Operating System :: POSIX :: Linux',
