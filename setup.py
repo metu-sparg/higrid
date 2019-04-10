@@ -33,6 +33,6 @@ setup(
         'Topic :: Multimedia :: Sound/Audio',
         'Topic :: Multimedia :: Sound/Audio :: Analysis',
         'Topic :: Multimedia :: Sound/Audio :: Capture/Recording',
-    ]
+    ],
     download_url='https://github.com/metu-sparg/higrid/archive/higrid_v01.tar.gz'
 )

@@ -1,5 +1,7 @@
 # higrid
 
+[![DOI](https://zenodo.org/badge/180388725.svg)](https://zenodo.org/badge/latestdoi/180388725)
+
 `higrid` is a Python package that implements the hierarchical grid refinement (HiGRID) direction-of-arrival estimation algorithm based on steered response power density (SRPD) maps, and spatial entropy-based (multiple) peak detection.
 
 The method was developed by the researchers in METU Spatial Audio Research Group ([http://www.sparglab.org](http://www.sparglab.org)). The technical details are available in the following papers. Please cite our papers if you want to use the code and/or the data provided in this package.
