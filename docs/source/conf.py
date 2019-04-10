@@ -12,9 +12,14 @@
 #
 import os
 import sys
+import mock
+
 sys.path.insert(0, os.path.abspath('.'))
 sys.path.insert(1, os.path.abspath('../../'))
-sys.path.insert(2, os.path.abspath('../../higrid/'))
+
+MOCK_MODULES = ['numpy', 'scipy', 'madmom', 'healpy', 'PeakUtils', 'tqdm']
+for mod_name in MOCK_MODULES:
+    sys.modules[mod_name] = mock.Mock()
 
 
 # -- Project information -----------------------------------------------------
