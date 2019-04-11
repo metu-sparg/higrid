@@ -6,102 +6,102 @@ Submodules
 
 `higrid` consists of the following submodules:
 
-higrid.Microphone module
+Microphone module
 ------------------------
 
 Microphone class that is to be expanded in the future versions of the package.
 
-.. automodule:: higrid.Microphone
+.. automodule:: Microphone
     :members:
     :undoc-members:
     :show-inheritance:
 
-higrid.TreeClusteri module
+TreeClusteri module
 --------------------------
 
 Submodule containing functions used in clustering multiresolution SRPD maps
 
-.. automodule:: higrid.TreeClusteri
+.. automodule:: TreeClusteri
     :members:
     :undoc-members:
     :show-inheritance:
 
-higrid.Treei module
+Treei module
 -------------------
 
 Tree selection based on spatial entropy
 
-.. automodule:: higrid.Treei
+.. automodule:: Treei
     :members:
     :undoc-members:
     :show-inheritance:
 
-higrid.dpd module
+dpd module
 -----------------
 
 Submodule including functions used for the direct path dominance (DPD) test
 
-.. automodule:: higrid.dpd
+.. automodule:: dpd
     :members:
     :undoc-members:
     :show-inheritance:
 
-higrid.emulate module
+emulate module
 ---------------------
 
 Submodule used for creating emulated recordings using acoustic impulse responses
 
-.. automodule:: higrid.emulate
+.. automodule:: emulate
     :members:
     :undoc-members:
     :show-inheritance:
 
-higrid.higridestimate module
+higridestimate module
 ----------------------------
 
 Main submodule that includes functions used in DOA estimation with the HiGRID algorithm
 
-.. automodule:: higrid.higridestimate
+.. automodule:: higridestimate
     :members:
     :undoc-members:
     :show-inheritance:
 
-higrid.shd module
+shd module
 -----------------
 
 Submodule that includes functions related to spherical harmonic decomposition (SHD)
 
-.. automodule:: higrid.shd
+.. automodule:: shd
     :members:
     :undoc-members:
     :show-inheritance:
 
-higrid.testpos3d module
+testpos3d module
 -----------------------
 
 Submodule for selecting emulated source positions
 
-.. automodule:: higrid.testpos3d
+.. automodule:: testpos3d
     :members:
     :undoc-members:
     :show-inheritance:
 
-higrid.treeutils module
+treeutils module
 -----------------------
 
 Submodule including some utility functions for manipulating tree representation
 
-.. automodule:: higrid.treeutils
+.. automodule:: treeutils
     :members:
     :undoc-members:
     :show-inheritance:
 
-higrid.utils module
+utils module
 -------------------
 
 Submodule including some general utility functions
 
-.. automodule:: higrid.utils
+.. automodule:: utils
     :members:
     :undoc-members:
     :show-inheritance:
