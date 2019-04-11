@@ -67,7 +67,7 @@ Please also check the [requirements.txt](https://github.com/metu-sparg/higrid/bl
 
 ### Installation using `pip3`
 
-Using `pip3` is the easiest way to install: `pip3 -install higrid`
+Using `pip3` is the easiest way to install: `pip3 install higrid`
 
 ### Installation from source
 
