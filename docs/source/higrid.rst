@@ -1,10 +1,8 @@
 higrid package
 ==============
 
-Submodules
-----------
 
-`higrid` consists of the following submodules:
+`higrid` consists of the following modules:
 
 Microphone module
 ------------------------
