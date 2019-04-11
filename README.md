@@ -1,6 +1,8 @@
 # higrid
 
 [![DOI](https://zenodo.org/badge/180388725.svg)](https://zenodo.org/badge/latestdoi/180388725)
+[![Documentation Status](https://readthedocs.org/projects/higrid/badge/?version=latest)](https://higrid.readthedocs.io/en/latest/?badge=latest)
+
 
 `higrid` is a Python package that implements the hierarchical grid refinement (HiGRID) direction-of-arrival estimation algorithm based on steered response power density (SRPD) maps, and spatial entropy-based (multiple) peak detection.
 
