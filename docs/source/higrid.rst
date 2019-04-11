@@ -102,7 +102,7 @@ higrid.utils module
 Submodule including some general utility functions
 
 .. automodule:: higrid.utils
-    :members: wavread, processirs, node2vec, selectsome, cart2sph, sph2cart, selectbinindx, loadpixbasis, fulltree, histtotree, sph_jnyn
+    :members:
     :undoc-members:
     :show-inheritance:
 
